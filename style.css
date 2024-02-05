@@ -1,0 +1,138 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "gilroy";
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+
+#main{
+    width: 100%;
+    height: 100vh;
+    /* background-color: black; */
+}
+#back{
+    width: 100%;
+    height: 100vh;
+}
+#back img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+#top{
+    pointer-events: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+}
+#workingarea{
+    position: relative;
+    margin: 0 auto;
+    width: 80%;
+    max-width: 1920px;
+    height: 100vh;
+}
+#nav{
+    pointer-events: all;
+    width: 100%;
+    padding:0 0 20px 0;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#nav img{
+    height: 150px;
+    width: 140px;
+}
+#nav-left , #nav-right{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+#nav a{
+    color: #f7f8f7;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    
+    cursor: pointer;
+}
+#hero{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    transform: translate(0%,-50%);
+    display: flex;
+    justify-content: space-between;
+}
+#hero-left{
+    min-width: 50%;
+}
+#hero-left .elem{
+    position: relative;
+    height: 9vw;
+    overflow: hidden;
+}
+#hero-left .elem h1:nth-child(1){
+    top: 0;
+}
+#hero-left .elem h1{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    line-height: .9;
+    font-family: "kajiro";
+    color: white;
+    font-weight: 100;
+    font-size: 11vw;
+}
+#hero-left  button{
+    pointer-events: all;
+    padding:.8vw 3vw;
+    font-size: 2vw;
+    font-family: "kajiro";
+    margin-top: 2vw;
+    cursor: pointer;
+    border: none;
+    border-radius: 30px;
+    background-color: white;
+    letter-spacing: 1px;
+    transition:background-color, .5s;
+}
+#hero-left  button:hover{
+    color: white;
+    background-color: black;
+    letter-spacing: 1px;
+}
+#hero-right{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 17%;
+    color: #fff;
+}
+#hero-right p{
+    font-size: 11px;
+    font-weight: 300;
+    text-align: right;
+}
+#hero-right #imagediv{
+    width: 100%;
+    height: 170px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    background-image:url(./assets/images/one-piece.webp);
+    background-size: cover;
+    background-position: center;
+}
+#hero-right p:nth-child(3){
+    margin-bottom: 100px;
+}
